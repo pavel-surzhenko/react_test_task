@@ -1,6 +1,11 @@
 import { Job } from "./Job";
 import { useJobs } from "../hooks/useJobs";
-import { Loading } from "./Loading";
+
+export const Loading : React.FC = () => {
+    return (
+        <span style={{ color: "#3A4562", fontSize: "25px" }}>Loading...</span>
+    );
+};
 
 export const JobList: React.FC = () => {
     const { data, isFetched } = useJobs();

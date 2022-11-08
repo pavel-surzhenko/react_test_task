@@ -14,7 +14,7 @@ export const Job: React.FC<IJob> = (props) => {
     return (
         <div className="job">
             <div className="job-img">
-                <img src={`${pictures[1]}`} alt="avatar"></img>
+                <img src={`${pictures[0]}`} alt="avatar"></img>
             </div>
             <div className="job-row">
                 <div className="job-row-2">
