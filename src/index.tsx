@@ -5,7 +5,7 @@ import { QueryClientProvider } from "react-query";
 import { queryClient } from "./lib/queryClient";
 import { BrowserRouter as Router } from "react-router-dom";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById("root") as Element);
 
 root.render(
     <QueryClientProvider client={queryClient}>

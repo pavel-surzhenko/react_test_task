@@ -1,4 +1,4 @@
-export const ShareIcon = () => {
+export const ShareIcon: React.FC = () => {
     return (
         <svg
             width="19"

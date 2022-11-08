@@ -4,7 +4,7 @@ import { JobList } from "./components";
 import { JobDetailsPage } from "./pages/JobDetailsPage";
 import { Route, Routes, Navigate } from "react-router-dom";
 
-export const App = () => {
+export const App: React.FC = () => {
     return (
             <Routes>
                 <Route path="/board" element={<JobList />}></Route>

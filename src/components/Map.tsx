@@ -1,6 +1,9 @@
 import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
 
-export const Map = ({ location }) => {
+interface IProps {
+    location: {lat:number, long?:number, lng?: number}
+}
+export const Map: React.FC<IProps> = ({ location }) => {
     const { isLoaded } = useLoadScript({
         googleMapsApiKey: "AIzaSyCs0eS3xGb7jddV7hZeApo6U7HZrW4Mz2Q",
     });

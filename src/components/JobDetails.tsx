@@ -2,10 +2,12 @@ import { RectangleIcon, ShareIcon, ArrowIcon } from "../img";
 import { NavLink, useParams } from "react-router-dom";
 import { useJobs } from "../hooks/useJobs";
 import { formatDistanceStrict } from "date-fns";
-import { Button, Image, Map, List } from "../components";
+import { Button, Image, Map, List } from ".";
 
-export const JobDetails = () => {
-    const { data } = useJobs();
+
+export const JobDetails: React.FC = () => {
+    const { data }  = useJobs();
+
     const { id } = useParams();
 
     const jobById = data.filter((job) => job.id === id)[0];
@@ -64,14 +66,14 @@ export const JobDetails = () => {
                     <div className="job-column-header">
                         <h2 className="job-header-title">Job Details</h2>
                         <div className="job-header-instruments">
-                            <a href="#" className="job-header-instruments-save">
+                            <a href="#1" className="job-header-instruments-save">
                                 <RectangleIcon />
                                 <p className="job-header-instruments-save-text">
                                     Save to my list
                                 </p>
                             </a>
                             <a
-                                href="#"
+                                href="#2"
                                 className="job-header-instruments-share"
                             >
                                 <ShareIcon />

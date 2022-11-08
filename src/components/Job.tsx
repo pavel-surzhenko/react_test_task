@@ -2,11 +2,12 @@ import { PointIcon, RatingIcon, RatingMobIcon, RectangleIcon } from "../img";
 import { Link } from "react-router-dom";
 
 import { formatDistanceStrict } from "date-fns";
+import { IJob } from '../hooks/useJobs'
 
-export const Job = (props) => {
+export const Job: React.FC<IJob> = (props) => {
     const { title, pictures, name, createdAt, id } = props;
 
-    const relatedDate = formatDistanceStrict(new Date(createdAt), new Date(), {
+    const relatedDate: String = formatDistanceStrict(new Date(createdAt), new Date(), {
         addSuffix: true,
     });
 
@@ -40,7 +41,7 @@ export const Job = (props) => {
                         <RatingMobIcon />
                     </div>
                     <div className="job-hours">
-                        <a href="#" className="job-bookmark">
+                        <a href="#3" className="job-bookmark">
                             <RectangleIcon />
                         </a>
                         <p className="job-hours-text"> Posted {relatedDate}</p>

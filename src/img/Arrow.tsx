@@ -1,4 +1,4 @@
-export const ArrowIcon = () => {
+export const ArrowIcon: React.FC = () => {
     return (
         <svg
             width="10"

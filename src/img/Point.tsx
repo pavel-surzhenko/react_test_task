@@ -1,4 +1,4 @@
-export const PointIcon =  () => {
+export const PointIcon: React.FC =  () => {
     return (
         <>
             <svg width="13" height="18" viewBox="0 0 13 18" fill="none" xmlns="http://www.w3.org/2000/svg">

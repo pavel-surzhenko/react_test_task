@@ -1,7 +1,7 @@
 import { JobDetails } from "../components"
 
 
-export const JobDetailsPage = () => {
+export const JobDetailsPage: React.FC = () => {
     return (
         <JobDetails />
     )

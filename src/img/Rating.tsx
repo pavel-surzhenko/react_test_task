@@ -1,4 +1,4 @@
-export const RatingIcon =  () => {
+export const RatingIcon: React.FC =  () => {
     return (
         <>
             <svg
