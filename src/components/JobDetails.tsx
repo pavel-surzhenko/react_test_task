@@ -7,7 +7,7 @@ import { useEffect } from "react";
 
 
 export const JobDetails: React.FC = () => {
-    const { data, isFetched }  = useJobs();
+    const { data }  = useJobs();
 
     const { id } = useParams();
 

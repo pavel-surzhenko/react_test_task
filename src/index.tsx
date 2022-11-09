@@ -16,5 +16,3 @@ root.render(
         </React.StrictMode>
     </QueryClientProvider>
 );
-
-// "homepage": "https://pavel-surzhenko.github.io/react_test_task#",

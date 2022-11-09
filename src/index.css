@@ -495,10 +495,17 @@ button{
     height: 100%;
 }
 /* -------------------------------- */
+@media (max-width: 1080px) {
+    .job-row-4 {
+        flex-direction: column;
+    }
+    .job-column-map{
+        padding-top: 25px;
+    }
+}
 @media (max-width: 767.98px) {
     .job-row-4 {
         max-width:384px ;
-        flex-direction: column;
         padding:24px 15px 37px ;
     }
     .job-column {
@@ -580,11 +587,13 @@ button{
         height: 50px;
     }
     .job-info-buttons-2{
-
     }
     .job-info-button-orange{
         padding: 17px 12px;
         width: auto;
+    }
+    .job-column-map{
+        padding-top: 0;
     }
     .job-column-map-title{
         display: block;
