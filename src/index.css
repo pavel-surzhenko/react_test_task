@@ -35,6 +35,11 @@ body {
     display: flex;
     justify-content: center;
 }
+.color-icon{
+    color:#38415D;
+    opacity: 0.8;
+    font-size: 30px;
+}
 
 .job-list {
     margin-top: 29px;
@@ -128,6 +133,7 @@ body {
 
 .job-bookmark {
     margin: 5px 6px 0 0;
+    background-color: transparent;
 }
 
 .job-hours-text {
@@ -248,8 +254,11 @@ body {
 .job-header-instruments-save{
     display: flex;
     margin-right: 24px;
+    background-color: transparent;
+    align-items: center;
 }
 .job-header-instruments-save-text{
+    font-size: 18px;
     padding-left: 8px;
     color: #3A4562;
 }
@@ -258,11 +267,14 @@ body {
     height: 32px;
 }
 .job-header-instruments-share{
+    background-color: transparent;
+    align-items: center;
     display: flex;
 }
 .job-header-instruments-share-text {
     padding-left: 8px;
     color: #3A4562;
+    font-size: 18px;
 }
 .job-header-instruments-share > img {
     width: 32px;
@@ -413,12 +425,14 @@ li > span {
 .job-image-list{
     display: flex;
 }
-.job-image-list > img {
+.material-placeholder > img{
     margin-right: 10px;
     width: 209px;
     height: 115px;
     border-radius: 8px;
+    object-fit: cover;
 }
+
 .job-image{
     padding-bottom: 97px;
 }
@@ -524,7 +538,7 @@ button{
     .job-descriptions-sallery{
         display: flex;
         flex-direction: column;
-        align-self: end;
+        align-self: flex-end;
     }
     .job-descriptions-sallery-text{
         order: 1;
@@ -595,5 +609,15 @@ button{
     }
     .job-column-map-details{
         margin-bottom: 37px;
+    }
+    .job-image-list{
+        flex-direction: column;
+        align-items: center;
+    }
+    .material-placeholder{
+        width: 100%;
+    }
+    .material-placeholder > img{
+        width: 100%;
     }
 }

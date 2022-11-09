@@ -1,10 +1,13 @@
-import { RectangleIcon, ShareIcon, ArrowIcon } from "../img";
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { NavLink, useParams } from "react-router-dom";
 import { IJob, useJobs } from "../hooks/useJobs";
 import { Button, Image, MapColumn, JobDescription} from "../components";
+import M from 'materialize-css';
+import { useEffect } from "react";
+
 
 export const JobDetails: React.FC = () => {
-    const { data }  = useJobs();
+    const { data, isFetched }  = useJobs();
 
     const { id } = useParams();
 
@@ -28,6 +31,12 @@ export const JobDetails: React.FC = () => {
         <Image key={index} img={image} />
     ));
 
+    useEffect(()=>{
+        const mb = document.querySelectorAll('.materialboxed');
+        M.Materialbox.init(mb,{})
+    })
+    
+
     return (
         <div className="container2">
             <div className="job-row-4">
@@ -35,14 +44,14 @@ export const JobDetails: React.FC = () => {
                     <div className="job-column-header">
                         <h2 className="job-header-title">Job Details</h2>
                         <div className="job-header-instruments">
-                            <a href="#1" className="job-header-instruments-save">
-                                <RectangleIcon />
+                            <button className="job-header-instruments-save">
+                                <i className="large material-icons color-icon">bookmark_border</i>
                                 <p className="job-header-instruments-save-text">Save to my list</p>
-                            </a>
-                            <a href="#2" className="job-header-instruments-share">
-                                <ShareIcon />
+                            </button>
+                            <button className="job-header-instruments-share">
+                                <i className="material-icons color-icon">share</i>
                                 <p className="job-header-instruments-share-text">Share</p>
-                            </a>
+                            </button>
                         </div>
                     </div>
                     <hr />
@@ -62,7 +71,7 @@ export const JobDetails: React.FC = () => {
                         <div className="job-image-list">{imageJSX}</div>
                     </div>
                     <NavLink to="/board" className="job-return">
-                        <ArrowIcon />
+                        <i className="material-icons color-icon">navigate_before</i>
                         <p className="job-return-text">RETURN TO JOB BOARD</p>
                     </NavLink>
                 </div>

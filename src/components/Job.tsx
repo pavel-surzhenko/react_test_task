@@ -1,4 +1,4 @@
-import { PointIcon, RatingIcon, RatingMobIcon, RectangleIcon } from "../img";
+import { RatingIcon, RatingMobIcon } from "../img";
 import { Link } from "react-router-dom";
 
 import { formatDistanceStrict } from "date-fns";
@@ -27,7 +27,7 @@ export const Job: React.FC<IJob> = (props) => {
                         </div>
                         <div className="job-country">
                             <div className="job-country-icon">
-                                <PointIcon />
+                                <i className="material-icons color-icon">room</i>
                             </div>
                             <p className="job-country-name">Vienna, Austria</p>
                         </div>
@@ -41,9 +41,9 @@ export const Job: React.FC<IJob> = (props) => {
                         <RatingMobIcon />
                     </div>
                     <div className="job-hours">
-                        <a href="#3" className="job-bookmark">
-                            <RectangleIcon />
-                        </a>
+                        <button className="job-bookmark">
+                            <i className="material-icons color-icon">bookmark_border</i>
+                        </button>
                         <p className="job-hours-text"> Posted {relatedDate}</p>
                     </div>
                 </div>

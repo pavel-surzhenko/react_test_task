@@ -2,7 +2,7 @@ interface IPropsImg {
     img: string;
 }
 export const Image: React.FC<IPropsImg> = ({ img }) => {
-    return <img src={img} alt="icon"></img>;
+    return <img src={img} alt="icon" className="materialboxed"></img>;
 };
 
 interface IPropsBtn {
