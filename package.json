@@ -2,6 +2,7 @@
   "name": "counter",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://pavel-surzhenko.github.io/react_test_task#",
   "dependencies": {
     "@react-google-maps/api": "^2.16.0",
     "@testing-library/jest-dom": "^5.16.4",

@@ -13,6 +13,3 @@ export const App: React.FC = () => {
             </Routes>
     )
 }
-
-
-// "homepage": "https://pavel-surzhenko.github.io/react_test_task#",
