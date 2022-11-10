@@ -81,7 +81,7 @@ body {
 .job-info {
     flex:1 1 auto;
     margin-right: 32px;
-    max-width: 959px;
+    max-width: 712px;
 }
 
 .job-title {
@@ -89,7 +89,7 @@ body {
     font-size: 20px;
     line-height: 25px;
     letter-spacing: -0.63px;
-    max-width: 712px;
+    width: 712px;
     color: #3A4562;
     margin-bottom: 8px;
 }
@@ -127,7 +127,7 @@ body {
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
-    
+    width:150px;
     margin-left: 32px;
 }
 
@@ -165,6 +165,7 @@ body {
 
     .job-info {
         margin-right: 0;
+        padding-bottom: 0;
     }
     .job-row {
         flex-direction: column;
@@ -182,6 +183,7 @@ body {
     }
 
     .job-title {
+        display: block;
         font-size: 18px;
         line-height: 24px;
         margin-bottom: 5px;
@@ -365,9 +367,7 @@ li > span {
     padding-bottom: 9px;
     color: #3A4562;
 }
-.job-info{
-    padding-bottom: 87px;
-}
+
 .job-info-text{
     font-size: 18px;
     line-height: 24px;
@@ -493,6 +493,9 @@ button{
 .job-column-map-img > img{
     width: 100%;
     height: 100%;
+}
+.job-info-buttons-2{
+    margin-bottom: 87px;
 }
 /* -------------------------------- */
 @media (max-width: 1080px) {
@@ -629,4 +632,47 @@ button{
     .material-placeholder > img{
         width: 100%;
     }
+}
+/* ----------------------- */
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+.pagination-container {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: space-between;
+    margin: 49px 0 64px;
+    background-color: #fff;
+    height: 52px;
+    max-width: 515px;
+    align-items: center;
+    box-shadow: 2px 1px 7px rgba(0, 0, 0, 0.08), 0px 2px 1px -1px rgba(0, 0, 0, 0.04), 0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 10.4px;
+}
+.pagination-number{
+    border-right: 1.3px solid #DEE3EF;
+    border-left: 1.3px solid #DEE3EF;
+}
+.pagination-number > a {
+    font-size: 20.8px;
+    line-height: 25px;
+    font-weight: 700;
+    color: #70778B;
+    letter-spacing: 1.73333px;
+    padding-right: 15px;
+}
+
+.pagination-number :first-child {
+    padding-left: 50px;
+}
+.pagination-number :last-child {
+    padding-right: 50px;
+}
+
+.icon-number{
+    font-size: 18px;
+    opacity: 0.5;
+    color: #878D9D;
+    padding:0 23px;
 }

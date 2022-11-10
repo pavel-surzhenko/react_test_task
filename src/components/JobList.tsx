@@ -1,5 +1,6 @@
 import { Job } from "./Job";
 import { useJobs } from "../hooks/useJobs";
+import { Pagination } from "./Pagination";
 
 export const Loading : React.FC = () => {
     return (
@@ -15,6 +16,7 @@ export const JobList: React.FC = () => {
     return (
         <div className="container">
             <div className="job-list">{isFetched ? jobJSX : <Loading />}</div>
+            <Pagination />
         </div>
     );
 };
