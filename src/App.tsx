@@ -14,3 +14,5 @@ export const App: React.FC = () => {
     )
 }
 
+
+// "homepage": "https://pavel-surzhenko.github.io/react_test_task#",
